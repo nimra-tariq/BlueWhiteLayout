@@ -1,97 +1,187 @@
-                body {
-                    margin: 0;
-                    padding: 0;
-                    font-family: 'Ubuntu', sans-serif;
-                }
-                
-                * {
-                    box-sizing: border-box;
-                }
-                
-                header {
-                    display: flex;
-                    background-color: black;
-                    column-gap: 56px;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    padding: 0px 38px;
-                    justify-content: center;
-                }
-                
-                header :nth-child(1) {
-                    flex-grow: 0;
-                }
-                
-                header :nth-child(2) {
-                    flex-grow: 0.8;
-                }
-                
-                .logodiv {
-                    position: relative;
-                    background-color: teal;
-                    width: 149px;
-                    height: 100px;
-                    /* left: 80px; */
-                    border: 5px solid white;
-                }
-                
-                .logodiv::after {
-                    /* position absolute will add top bottom that will disturb the tri posi on giving padding to logo div so set it to zero  */
-                    content: " ";
-                    position: absolute;
-                    width: 0;
-                    height: 0;
-                    border-left: 65px solid transparent;
-                    border-right: 74px solid transparent;
-                    border-top: 50px solid teal;
-                    /* border-bottom: 173px solid transparent; */
-                    top: 90px;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                }
-                
-                .logotext h3,
-                .logotext h4 {
-                    color: white;
-                    text-align: center;
-                    font-weight: 200;
-                    margin: 0;
-                }
-                
-                .logotext h3 span {
-                    font-weight: 1000;
-                    font-size: larger;
-                }
-                
-                .logotext {
-                    /* align text in logodiv center  */
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    text-align: center;
-                    width: fit-content;
-                    height: fit-content;
-                }
-                
-                .mynav ol {
-                    display: flex;
-                    color: white;
-                }
-                
-                .mynav ol li {
-                    list-style-type: none;
-                    flex-grow: 0.8;
-                }
-                /* @media screen and (min-width: 750px) and (max-width: 1200px) {
+                        * {
+                                font-family: 'Ubuntu', sans-serif;
+                            }
+                            
+                            body {
+                                margin: 0;
+                                padding: 0;
+                                background-image: url(./city1.jpg);
+                                background-size: cover;
+                                background-position: center;
+                                animation: bgimg 60s linear 0s;
+                                animation-iteration-count: infinite;
+                                position: relative;
+                                background-repeat: no-repeat;
+                                height: 800px;
+                            }
+                            
+                            @keyframes bgimg {
+                                0% {
+                                    background-image: url(./city1.jpg);
+                                }
+                                25% {
+                                    background-image: url(./city2.jpg);
+                                }
+                                50% {
+                                    background-image: url(./city3.jpg);
+                                }
+                                75% {
+                                    background-image: url(./city4.jpg);
+                                }
+                                100% {
+                                    background-image: url(./city5.jpg);
+                                }
+                            }
+                            
+                            * {
+                                box-sizing: border-box;
+                            }
+                            
+                            header {
+                                display: flex;
+                                background-color: none;
+                                /* column-gap: 56px; */
+                                align-items: center;
+                                flex-wrap: wrap;
+                                padding: 0px 38px;
+                                justify-content: space-between;
+                                position: fixed;
+                                width: 100%;
+                            }
+                            /* header :nth-child(1) {
+                                flex-grow: 0;
+                            }
+                            
+                            header :nth-child(2) {
+                                /* flex-grow: 0.8; */
+                        }
+                        */ .logodiv {
+                            position: relative;
+                            background-color: #01132f;
+                            width: 149px;
+                            height: 100px;
+                            /* left: 80px; */
+                            
+                            border: 5px solid white;
+                        }
+                        .logodiv::after {
+                            /* position absolute will add top bottom that will disturb the tri posi on giving padding to logo div so set it to zero  */
+                            
+                            content: " ";
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-left: 65px solid transparent;
+                            border-right: 74px solid transparent;
+                            border-top: 50px solid #c1c1c1;
+                            /* border-bottom: 173px solid transparent; */
+                            
+                            top: 95px;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                        }
+                        .logotext h3,
+                        .logotext h4 {
+                            color: white;
+                            text-align: center;
+                            font-weight: 200;
+                            margin: 0;
+                        }
+                        .logotext h3 span {
+                            font-weight: 1000;
+                            font-size: larger;
+                        }
+                        .logotext {
+                            /* align text in logodiv center  */
+                            
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            text-align: center;
+                            width: fit-content;
+                            height: fit-content;
+                        }
+                        .mynav ol {
+                            display: flex;
+                            color: white;
+                        }
+                        .mynav ol li {
+                            list-style-type: none;
+                            padding: 24px 34px;
+                            font-weight: 1000;
+                            /* flex-grow: 0.8; */
+                            /*dont use it will disturb the li unevenly distribute the li use flex grow instead and margin to adjust it further width: 100%; */
+                            /* margin-right: 56px; */
+                        }
+                        /* @media screen and (min-width: 750px) and (max-width: 1200px) {
                    
-                } */
-                
-                section {
-                    background-image: ;
-                    background-size: contain;
-                }
+                               } */
+                        .fas {
+                            color: white
+                        }
+                        .mynav ol li:hover {
+                            background-color: white;
+                            cursor: pointer;
+                            color: #01132f;
+                        }
+                        .mynav ol li:hover .fa-search {
+                            color: #01132f;
+                        }
+                        .buttondiv i,
+                        button {
+                            padding: 12px 10px;
+                            height: 44px;
+                            border: 1px solid white;
+                        }
+                        .buttondiv button {
+                            color: #01132f;
+                            font-weight: 1000;
+                            font-family: 'Ubuntu', sans-serif;
+                        }
+                        .buttondiv i:hover,
+                        button:hover {
+                            background-color: #c1c1c1;
+                            border: 1px solid #01132f;
+                            color: #01132f;
+                        }
+                        section.textincenter {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            width: fit-content;
+                            height: fit-content;
+                            text-align: center;
+                            font-size: 10px;
+                        }
+                        section.textincenter p {
+                            color: white;
+                            font-size: 2.4em;
+                            font-weight: 1000;
+                            /* width: 413px; */
+                        }
+                        section.textincenter button {
+                            padding: 10px 34px;
+                            font-size: 16px;
+                            font-weight: 900;
+                        }
+                        section.chatbutton {
+                            height: fit-content;
+                            width: fit-content;
+                            margin: auto;
+                            position: absolute;
+                            /* left: 0; */
+                            
+                            right: 0px;
+                            rigth: 0;
+                            /* top: 0; */
+                            
+                            bottom: 0;
+                        }
