@@ -1,72 +1,76 @@
                         * {
-                                font-family: 'Ubuntu', sans-serif;
-                            }
-                            
-                            body {
-                                margin: 0;
-                                padding: 0;
-                                background-image: url(./city1.jpg);
-                                background-size: cover;
-                                background-position: center;
-                                animation: bgimg 60s linear 0s;
-                                animation-iteration-count: infinite;
-                                position: relative;
-                                background-repeat: no-repeat;
-                                height: 800px;
-                            }
-                            
-                            @keyframes bgimg {
-                                0% {
-                                    background-image: url(./city1.jpg);
-                                }
-                                25% {
-                                    background-image: url(./city2.jpg);
-                                }
-                                50% {
-                                    background-image: url(./city3.jpg);
-                                }
-                                75% {
-                                    background-image: url(./city4.jpg);
-                                }
-                                100% {
-                                    background-image: url(./city5.jpg);
-                                }
-                            }
-                            
-                            * {
-                                box-sizing: border-box;
-                            }
-                            
-                            header {
-                                display: flex;
-                                background-color: none;
-                                /* column-gap: 56px; */
-                                align-items: center;
-                                flex-wrap: wrap;
-                                padding: 0px 38px;
-                                justify-content: space-between;
-                                position: fixed;
-                                width: 100%;
-                            }
-                            /* header :nth-child(1) {
-                                flex-grow: 0;
-                            }
-                            
-                            header :nth-child(2) {
-                                /* flex-grow: 0.8; */
+                            font-family: 'Ubuntu', sans-serif;
                         }
-                        */ .logodiv {
+                        
+                        body {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        .bgdiv {
+                            position: relative;
+                            background-image: url(./city1.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            animation: bgimg 60s linear 0s;
+                            animation-iteration-count: infinite;
+                            background-repeat: no-repeat;
+                            height: 800px;
+                        }
+                        
+                        @keyframes bgimg {
+                            0% {
+                                background-image: url(./city1.jpg);
+                            }
+                            25% {
+                                background-image: url(./city2.jpg);
+                            }
+                            50% {
+                                background-image: url(./city3.jpg);
+                            }
+                            75% {
+                                background-image: url(./city4.jpg);
+                            }
+                            100% {
+                                background-image: url(./city5.jpg);
+                            }
+                        }
+                        
+                        * {
+                            box-sizing: border-box;
+                        }
+                        
+                        header {
+                            display: flex;
+                            background-color: none;
+                            /* column-gap: 56px; */
+                            align-items: center;
+                            flex-wrap: wrap;
+                            padding: 0px 38px;
+                            justify-content: space-between;
+                            position: fixed;
+                            width: 100%;
+                        }
+                        
+                        header :nth-child(1) {
+                            flex-grow: 0;
+                        }
+                        
+                        header :nth-child(2) {
+                            /* flex-grow: 0.8; */
+                        }
+                        
+                        .logodiv {
                             position: relative;
                             background-color: #01132f;
                             width: 149px;
                             height: 100px;
                             /* left: 80px; */
-                            
                             border: 5px solid white;
                         }
+                        
                         .logodiv::after {
                             /* position absolute will add top bottom that will disturb the tri posi on giving padding to logo div so set it to zero  */
-                            
                             content: " ";
                             position: absolute;
                             width: 0;
@@ -75,12 +79,12 @@
                             border-right: 74px solid transparent;
                             border-top: 50px solid #c1c1c1;
                             /* border-bottom: 173px solid transparent; */
-                            
                             top: 95px;
                             left: 0;
                             bottom: 0;
                             right: 0;
                         }
+                        
                         .logotext h3,
                         .logotext h4 {
                             color: white;
@@ -88,13 +92,14 @@
                             font-weight: 200;
                             margin: 0;
                         }
+                        
                         .logotext h3 span {
                             font-weight: 1000;
                             font-size: larger;
                         }
+                        
                         .logotext {
                             /* align text in logodiv center  */
-                            
                             top: 0;
                             bottom: 0;
                             margin: auto;
@@ -106,10 +111,12 @@
                             width: fit-content;
                             height: fit-content;
                         }
+                        
                         .mynav ol {
                             display: flex;
                             color: white;
                         }
+                        
                         .mynav ol li {
                             list-style-type: none;
                             padding: 24px 34px;
@@ -121,34 +128,41 @@
                         /* @media screen and (min-width: 750px) and (max-width: 1200px) {
                    
                                } */
+                        
                         .fas {
                             color: white
                         }
+                        
                         .mynav ol li:hover {
                             background-color: white;
                             cursor: pointer;
                             color: #01132f;
                         }
+                        
                         .mynav ol li:hover .fa-search {
                             color: #01132f;
                         }
+                        
                         .buttondiv i,
                         button {
                             padding: 12px 10px;
                             height: 44px;
                             border: 1px solid white;
                         }
+                        
                         .buttondiv button {
                             color: #01132f;
                             font-weight: 1000;
                             font-family: 'Ubuntu', sans-serif;
                         }
+                        
                         .buttondiv i:hover,
                         button:hover {
                             background-color: #c1c1c1;
                             border: 1px solid #01132f;
                             color: #01132f;
                         }
+                        
                         section.textincenter {
                             position: absolute;
                             top: 0;
@@ -161,27 +175,100 @@
                             text-align: center;
                             font-size: 10px;
                         }
+                        
                         section.textincenter p {
                             color: white;
                             font-size: 2.4em;
                             font-weight: 1000;
                             /* width: 413px; */
                         }
+                        
                         section.textincenter button {
                             padding: 10px 34px;
                             font-size: 16px;
                             font-weight: 900;
                         }
+                        
                         section.chatbutton {
                             height: fit-content;
                             width: fit-content;
                             margin: auto;
                             position: absolute;
                             /* left: 0; */
-                            
-                            right: 0px;
-                            rigth: 0;
+                            right: 0;
                             /* top: 0; */
-                            
                             bottom: 0;
+                        }
+                        
+                        section.sectwo {
+                            position: relative;
+                            background-color: white;
+                            /* z-index: -1; */
+                        }
+                        
+                        div.h1h2div {
+                            padding: 20px;
+                            /* position: absolute; */
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            width: fit-content;
+                            height: fit-content;
+                            text-align: center;
+                        }
+                        
+                        div.h1h2div h1,
+                        h3 {
+                            margin: 0;
+                            padding-top: 13px;
+                            padding-bottom: 6px;
+                            color: #01132f;
+                        }
+                        
+                        div.threepicdiv {
+                            display: flex;
+                            justify-content: center;
+                            column-gap: 40px;
+                            padding-top: 44px;
+                            flex-wrap: wrap;
+                        }
+                        
+                        div.threepicdiv .block {
+                            position: relative;
+                            width: 330px;
+                            height: 207px;
+                            background-color: rgb(207, 207, 207);
+                        }
+                        
+                        .threepicdiv .block img {
+                            width: 330px;
+                            height: 207px;
+                            object-fit: cover;
+                        }
+                        
+                        .circle {
+                            /* box-shadow: 10px 10px 3px white; */
+                            border: 7px solid white;
+                            top: -26px;
+                            position: absolute;
+                            width: 80px;
+                            height: 80px;
+                            background-color: black;
+                            border-radius: 40px;
+                            margin: auto;
+                            left: 0;
+                            right: 0;
+                            /* bottom: 0;*/
+                        }
+                        
+                        .sectwo .block::after {
+                            content: " ";
+                            position: absolute;
+                            border-bottom: 10px solid #c1c1c1;
+                            width: 330px;
+                            top: 206px;
+                            bottom: 0;
+                            left: 0;
                         }
