@@ -230,8 +230,8 @@
         div.threeblockdiv {
             display: flex;
             justify-content: center;
-            column-gap: 40px;
-            padding-top: 44px;
+            /* column-gap: 40px; */
+            padding-top: 25px;
             flex-wrap: wrap;
         }
         
@@ -239,12 +239,21 @@
             position: relative;
             width: 330px;
             height: 410px;
+            padding: 0px 10px;
         }
         
         .threeblockdiv .block img {
-            width: 330px;
+            width: 258px;
             height: 207px;
             object-fit: cover;
+        }
+        
+        .sectwoP {
+            font-size: 0.86em;
+        }
+        
+        .sectwoh2 {
+            font-size: 1.2em;
         }
         
         .circle {
@@ -258,18 +267,26 @@
             border-radius: 40px;
             margin: auto;
             left: 0;
-            right: 0;
+            right: 43px;
+            transition: transform 0.5s linear 0s;
             /* bottom: 0;*/
+        }
+        
+        .circle:hover {
+            transform: scale(1.2);
+            cursor: pointer;
         }
         
         .sectwo .block h2::before {
             content: " ";
             position: absolute;
             border-bottom: 10px solid #c1c1c1;
-            width: 330px;
+            width: 258px;
             top: 0;
             bottom: 194px;
-            left: 0;
+            left: 10px;
+            /* due to virtual element before h2 the img tag hover effect was not working this property will make the v ele pass through thr img and img will be scaled  */
+            pointer-events: none;
         }
         
         .threeblockdiv .block i.foo {
@@ -285,6 +302,106 @@
             padding: 0px;
         }
         
+        img {
+            transition: transform 2s linear 0s;
+        }
+        
+        img:hover {
+            transform: scale(1.2);
+            width: 200px;
+            cursor: pointer;
+        }
+        
+        img:hover .sectwo .block h2::before {
+            content: " ";
+            display: none;
+        }
+        
         .blockbutton {
             border-color: #01132f;
+        }
+        
+        .secthree {
+            position: relative;
+            background-size: cover;
+            background-image: url(./secthreebgimg.jpg);
+            background-repeat: no-repeat;
+            height: 550px;
+            background-position: bottom;
+        }
+        
+        .secthree::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(70, 110, 102, 0.212);
+            pointer-events: none;
+        }
+        
+        .secthreeText {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            width: fit-content;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .secthreeTexth1 {
+            font-weight: 1000;
+            color: white;
+            font-size: 1.8em;
+        }
+        
+        .secthreebutton {
+            border: 1px solid #01132f;
+            font-weight: 1000;
+            margin-bottom: 35px;
+        }
+        
+        .secthree .searchdiv {
+            display: flex;
+            background-color: white;
+            margin: 33px 0px;
+            width: 43vw;
+            position: absolute;
+            top: 241px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            font-size: 9px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 10px;
+        }
+        
+        h3.textinbar {
+            color: #c3c1c1;
+            font-size: 1.1em;
+            margin: 0;
+            padding: 12px;
+        }
+        
+        .searchdivicon {
+            color: #01132f;
+            font-size: 1em;
+            font-weight: 900;
+        }
+        
+        .secthree .searchdiv:hover {
+            background-color: #dad4d4;
+            cursor: pointer;
+        }
+        
+        .secthree .searchdiv:hover .textinbar {
+            color: white;
         }
