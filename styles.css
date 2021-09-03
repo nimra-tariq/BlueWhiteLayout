@@ -280,6 +280,7 @@
     
     .sectwoP {
         font-size: 0.86em;
+        color: #01132f;
     }
     
     .sectwoh2 {
@@ -436,7 +437,7 @@
         color: white;
     }
     
-    .leftcontactbar {
+    .rightcontactbar {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -471,26 +472,37 @@
         transform: scale(1.2);
     }
     
+    .secfour {
+        background-color: #c1c1c13b;
+        padding: 30px;
+        padding-bottom: 51px;
+    }
+    
     .sec4threeblockdiv {
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 53px;
     }
     
     .secfour .sec4blockdiv {
-        width: 30%;
-        /* height: 200px; */
+        width: 224px;
         background-color: #01132f;
-        border-bottom: 2px solid white;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        padding: 30px;
+        padding: 49px;
         position: relative;
+        border-radius: 42px;
+        box-shadow: 10px 8px 9px #808080bf;
+        margin: 10px;
+    }
+    
+    .secfour #sec4blockdiv2 {
+        transform: scale(1.1);
+        margin: 20px 10px;
     }
     
     header {
-        display: none;
+        /* display: none; */
     }
     
     .textsec4block h1,
@@ -504,20 +516,75 @@
         position: relative;
         justify-content: space-between;
         padding: 20px;
+        background-color: #01132f;
+        color: white;
+        position: relative;
     }
     
     footer :nth-child(1) .circle1 {
         width: 30px;
         height: 30px;
         border-radius: 50px;
-        background-color: black;
+        background-color: white;
     }
     
     .footerdiv {
-        /* padding: 20px; */
+        padding: 20px;
     }
     
     .circle1 {
         display: inline-block;
         margin-left: 5px;
+    }
+    
+    footer .footerdiv .ispandiv {
+        margin: 21.28px 0px;
+    }
+    
+    footer .footerdiv .sec4i {
+        margin-right: 12px;
+    }
+    
+    div.aboutme {
+        background: #c1c1c1;
+        padding: 10px;
+        color: #01132f;
+    }
+    
+    div .aboutmespan {
+        color: white;
+        font-size: 0.86em;
+    }
+    
+    footer #footerdiv4 :nth-child(2) i {
+        vertical-align: top;
+        line-height: 1.5;
+    }
+    
+    footer .footerdiv .sec4p {
+        margin: 0;
+        display: inline-block;
+        width: 255px;
+    }
+    
+    footer .livechat {
+        position: absolute;
+        top: -44px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: fit-content;
+        width: fit-content;
+        margin-left: auto;
+    }
+    
+    .livechati {
+        color: #01132f;
+        margin-right: 10px;
+    }
+    
+    .livechatbutton {
+        border: 4px solid white;
+        font-size: 1.0em;
+        font-weight: 1000;
     }
