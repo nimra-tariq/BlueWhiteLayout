@@ -354,7 +354,7 @@ img:hover .sectwo .block h2::before {
 .secthree {
     position: relative;
     background-size: cover;
-    background-image: url(./secthreebgimg.jpg);
+    background-image: url(./secthreeBgimg.jpg);
     background-repeat: no-repeat;
     height: 550px;
     background-position: bottom;
@@ -498,10 +498,6 @@ h3.textinbar {
 .secfour #sec4blockdiv2 {
     transform: scale(1.1);
     margin: 20px 10px;
-}
-
-header {
-    /* display: none; */
 }
 
 .textsec4block h1,
