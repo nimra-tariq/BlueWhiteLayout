@@ -547,13 +547,12 @@ footer .footerdiv .sec4i {
 div.aboutme {
     background: #c1c1c1;
     padding: 10px;
-    color: #01132f;
     text-align: center;
 }
 
-div .aboutmespan {
-    color: white;
-    font-size: 0.86em;
+div.aboutme a {
+    font-size: smaller;
+    text-decoration: none;
 }
 
 footer #footerdiv4 :nth-child(2) i {
